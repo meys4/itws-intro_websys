@@ -1,0 +1,48 @@
+html { 
+    font-size: 100%; 
+    overflow-y: scroll; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+body { 
+    margin: 0; 
+    font-size: 0.8em; 
+    font-family: sans-serif; 
+    line-height: 1.4;
+    background-color: #ffffff;
+}
+
+button, input, select, textarea { 
+    font-family: sans-serif; 
+    color: #222; 
+}
+
+textarea { 
+    overflow: auto; 
+    vertical-align: 
+    top; resize: vertical;
+}
+
+ul{
+    margin: 0px;
+}
+
+.container {
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto;	
+}
+
+.project > .title {
+	margin-bottom: 0px;
+}
+
+.project > .meta {
+	font-size: 0.8em;
+}
+
+.project > .meta > .date {
+	float: right;
+
+}
