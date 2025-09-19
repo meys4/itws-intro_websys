@@ -20,14 +20,23 @@ button, input, select, textarea {
 
 textarea { 
     overflow: auto; 
-    vertical-align: 
-    top; resize: vertical;
+    vertical-align: top; 
+    resize: vertical;
 }
 
 ul{
     margin: 0px;
 }
 
+a{
+    color:#222;
+}
+
+img {
+    height: 20%;
+    width: 20%;
+    float: right;
+}
 .container {
 	width: 80%;
 	max-width: 600px;
