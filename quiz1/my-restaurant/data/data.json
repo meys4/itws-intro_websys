@@ -1,0 +1,81 @@
+{
+  "dishes": [
+    {
+      "name": "Mapo Tofu",
+      "description": "A Sichuan dish featuring soft tofu in a spicy sauce with minced meat and Sichuan peppercorns.",
+      "category": "Non-vegetarian",
+      "cuisine": "Chinese",
+      "image_url": "https://www.cookerru.com/wp-content/uploads/2022/06/mapo-tofu-recipe-preview-feature-500x500.jpg",
+      "ingredients": [
+        "Tofu",
+        "Ground pork or beef",
+        "Doubanjiang (chili bean paste)",
+        "Garlic",
+        "Ginger",
+        "Sichuan peppercorns",
+        "Green onions",
+        "Soy sauce",
+        "Vegetable oil"
+      ],
+      "price": 13.99
+    },
+    {
+      "name": "Beef Pho",
+      "description": "A noodle soup made with a rich beef broth, rice noodles, tender beef slices, and fresh herbs.",
+      "category": "Non-vegetarian",
+      "cuisine": "Vietnamese",
+      "image_url": "https://www.savorysweetspoon.com/wp-content/uploads/2024/01/Pho-Tai-Recipe-1x1-1.jpg",
+      "ingredients": [
+        "Beef bones",
+        "Rice noodles",
+        "Beef brisket or flank",
+        "Onion",
+        "Ginger",
+        "Star anise",
+        "Cinnamon",
+        "Fish sauce",
+        "Fresh herbs (basil, cilantro, mint)",
+        "Bean sprouts",
+        "Lime"
+      ],
+      "price": 14.50
+    },
+    {
+    "name": "Ban Mian",
+    "description": "A creamy, nutty noodle dish topped with vegetables or crushed peanuts.",
+    "category": "Vegetarian",
+    "cuisine": "Chinese (Fusion)",
+    "image_url": "https://data.thefeedfeed.com/static/2021/02/11/161306090060255b2454bc0.jpg",
+    "ingredients": [
+      "Wheat noodles",
+      "Peanut butter",
+      "Soy sauce",
+      "Sesame oil",
+      "Garlic",
+      "Ginger",
+      "Chili flakes",
+      "Green onions",
+      "Crushed peanuts"
+    ],
+    "price": 10.25
+    },
+    {
+      "name": "Roujiamo",
+      "description": "A popular street food consisting of chopped braised pork stuffed into a crispy, chewy flatbread.",
+      "category": "Non-vegetarian",
+      "cuisine": "Chinese",
+      "image_url": "https://www.sidechef.com/recipe/ebb454a0-1496-410e-87b9-91fff9abbb2d.jpg",
+      "ingredients": [
+        "Flatbread (mo)",
+        "Braised pork belly",
+        "Soy sauce",
+        "Five-spice powder",
+        "Garlic",
+        "Ginger",
+        "Chili paste",
+        "Cilantro"
+      ],
+      "price": 8.99
+    }
+  ]
+}

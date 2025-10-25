@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Restaurant Menu</title>
+  <link rel="stylesheet" href="resources/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="headerContainer">
+      <div>
+        <h1>My Restaurant</h1>
+      </div>
+      <div id="searchContainer">
+        <input type="text" id="search" placeholder="Search dishes, cuisines, or ingredients..." />
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+  </header>
+
+    <section id="menu">
+      <table id="menu-table">
+
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Cuisine</th>
+            <th>Ingredients</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody id="menu-body">
+          <tr><td colspan="7" style="text-align:center;">Loading menu...</td></tr>
+        </tbody>
+
+      </table>
+    </section>
+
+  <script src="resources/script.js"></script>
+</body>
+</html>
