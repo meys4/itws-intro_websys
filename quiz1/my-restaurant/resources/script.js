@@ -1,4 +1,4 @@
-let allDishes = []; // store all dishes globally
+let allDishes = []; 
 
 // Fetch menu data
 fetch("data/data.json")
@@ -7,7 +7,7 @@ fetch("data/data.json")
     return response.json();
   })
   .then(data => {
-    allDishes = data.dishes; // store dishes for search
+    allDishes = data.dishes;
     displayMenu(allDishes);
   })
   .catch(error => {
@@ -16,7 +16,7 @@ fetch("data/data.json")
     `;
   });
 
-// Function to display dishes in the table
+// display dishes
 function displayMenu(dishes) {
   const menuBody = document.getElementById("menu-body");
   menuBody.innerHTML = "";
@@ -40,8 +40,7 @@ function displayMenu(dishes) {
     menuBody.appendChild(row);
   });
 }
-
-// 🔍 Search button functionality
+//search
 document.getElementById("search-btn").addEventListener("click", () => {
   const query = document.getElementById("search").value.toLowerCase();
 
