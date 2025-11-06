@@ -38,7 +38,23 @@ class Subtraction extends Operation {
   }
 }
 
+class Multiplication extends Operation {
+  public function operate() {
+    return $this->operand_1 * $this->operand_2;
+  }
+  public function getEquation() {
+    return $this->operand_1 . ' x ' . $this->operand_2 . ' = ' . $this->operate();
+  }
+}
 
+class Division extends Operation {
+  public function operate() {
+    return $this->operand_1 / $this->operand_2;
+  }
+  public function getEquation() {
+    return $this->operand_1 . ' % ' . $this->operand_2 . ' = ' . $this->operate();
+  }
+}
 // End Part 1
 
 
@@ -74,8 +90,23 @@ class Subtraction extends Operation {
   try {
     if (isset($_POST['add']) && $_POST['add'] == 'Add') {
       $op = new Addition($o1, $o2);
+    } 
+    if (isset($_POST['sub']) && $_POST['sub'] == 'Subtract') {
+      $op = new Subtraction($o1, $o2);
     }
+    if (isset($_POST['mult']) && $_POST['mult'] == 'Multiply') {
+      $op = new Multiplication($o1, $o2);
+    }
+    if (isset($_POST['div']) && $_POST['div'] == 'Divide') {
+      if ($o2 == 0){
+        throw new Exception('Cannot divide by 0.');
+      } else{
+        $op = new Division($o1, $o2);
+      }
+    }
+    
 // Put the code for Part 2 here  \/
+
 
 
 
