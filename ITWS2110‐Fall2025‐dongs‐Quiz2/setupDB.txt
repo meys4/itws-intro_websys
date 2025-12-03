@@ -1,0 +1,28 @@
+CREATE DATABASE ITWS2110_Fall2025_dongs_Quiz2;
+
+USE ITWS2110_Fall2025_dongs_Quiz2;
+
+CREATE TABLE users (
+    userId INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    nickName VARCHAR(50),
+    passwordHash VARCHAR(255) NOT NULL,
+    salt VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE projects (
+    projectId INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE projectMembership (
+    projectId INT NOT NULL,
+    memberId INT NOT NULL,
+    PRIMARY KEY (projectId, memberId),
+    FOREIGN KEY (projectId) REFERENCES projects(projectId)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (memberId) REFERENCES users(userId)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
